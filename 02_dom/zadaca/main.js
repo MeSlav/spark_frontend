@@ -72,18 +72,21 @@ for( var i = 0; i<5; i++ ) {
 
 document.body.insertBefore(div, document.body.firstElementChild);
 
-// Nastavak zadace
+// ZADAĆA 02
 
+// Izbacimo zadnjeg člana liste:
 div.removeChild(div.lastElementChild);
 
+// Izbacimo sve članove koji se ponavljaju:
 for (let i=0; i < div.childElementCount-1; i++) {
   for (let j=i+1; j < div.childElementCount; j++) {
-    if(div.children[i].isEqualNode(div.children[j])){
+    if(div.children[i].isEqualNode(div.children[j])) {
       div.removeChild(div.children[j]);
     }
   }
 }
 
+// Izbacimo sve članove koji se ponavljaju:
 div.appendChild(div.replaceChild(div.lastElementChild, div.firstElementChild));
 
 const a = document.createElement('a');
@@ -92,15 +95,30 @@ a.innerHTML = "Google";
 
 div.lastElementChild.previousElementSibling.appendChild(a);
 
+// U primjeru rješenja zadaće koji sam pokazivao na predavanju sam imao grešku.
+// Obojio sam svaki sljedeći element u različitu boju, umjesto da sam ih bojao relativno na vrijednost koju sadržavaju u <p></p> tagu.
+// Greška je ispravljena dodavajući liniju 101.
+
+/*
 for(let i=0; i<div.childElementCount; i++){
-  if(i%2 === 1){
+  const number = div.children[i].getElementsByTagName('p')[0].innerText.split(' ')[1];
+  if(number%2 === 1){
     div.children[i].setAttribute('style','background-color:red');
   } else {
     div.children[i].setAttribute('style','background-color:blue');
   }
-}
+};
+*/
+
+// Dodatni primjer rješavanja zadaće bez 'for' petlje:
+
+Array.from(div.children).forEach((item, i) => {
+  const numb = item.getElementsByTagName('p')[0].innerText.split(' ')[1];
+  div.children[i].style.backgroundColor = numb%2 !== 0 ? 'blue' : 'red';
+});
 
 const css = document.createElement('link');
 css.setAttribute('rel','stylesheet');
 css.setAttribute('type','text/css');
 css.setAttribute('href','css/style.css');
+document.head.appendChild(css);

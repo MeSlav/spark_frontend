@@ -1,0 +1,32 @@
+* Koristimo EcmaScript 2015+ (ES6, ..., ES9)!
+
+Kada se učimo JavaScriptu po prvi put, svi izvori nas navode da prvo učimo starije verzije JS sintakse jer su one podržane na svakom browseru.
+Kako napredujemo u developmentu, odnosno kako koristimo novije, modernije alate, ti alati nam omogućuju da koristimo najmodernije verzije sintakse u JS-u, bez brige hoće li to browseri podržavati iz razloga što većinom automatiziranim alatima prije dostavljanja produkcijskog koda, sav naš kod transpile-iramo u ES5 varijantu koju su u cijelosti podržali svi browseri.
+
+Napomene:
+Sintaksa u JS-u (ECMAScript) će se konstantno nadograđivati i ubacivati nove feature, ali i zadržati sve stare, zbog backwards compatibility-a.
+
+Link u kojem možemo vidjeti koje smo nove feature dobili od 2015+ u JS-u:
+https://medium.com/@trlogic/es6-es7-es8-features-c0371b0b4c9a
+
+Još jedna napomena, većina browsera još nije podržala sve ove feature-e.
+
+ES5:
+var, function() {}, 'Varijabla X jednaka je ' + x, ...
+
+ES6+:
+const & let, () => {}, `Varijabla X jednaka je ${x}`, ...
+
+* Koristimo element.style.attribute umjesto element.setAttribute() za sve CSS modifikacije!
+Link: https://stackoverflow.com/questions/3919291/when-to-use-setattribute-vs-attribute-in-javascript/27772088
+
+* Koristimo element.addEventListener() umjesto element.onevent!
+
+* Držite do identacija(razmaka)! Na VSCode-u imaju ekstenzije indent-rainbow, Rainbow Brackets... koje će vam pomoći da držite kod urednim.
+
+* Strukturirajte kod u smislene cjeline kako bi bio lako čitak, intuitivan, smislen i pregledan developerima koji će ga nakon što ga vi napišete pregledavati na code review-u!
+
+* Mjestimično ubacite koji komentar kako bi objasnili što želite postići u narednih nekoliko linija.
+
+
+
