@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  border: 1px solid #ddd;
+  height: 300px;
+  display: flex;
+}
+
+.dropzone {
+  border: 1px solid #ddd;
+  margin: 2px;
+  overflow-y: scroll;
+  flex: 1;
+}
+
+.todo {
+  border: 1px solid #ddd;
+  margin: 2px;
+  overflow-y: scroll;
+  flex: 1;
+}
+
+.inprogress {
+  border: 1px solid #ddd;
+  margin: 2px;
+  overflow-y: scroll;
+  flex: 1;
+}
+
+.done {
+  border: 1px solid #ddd;
+  margin: 2px;
+  overflow-y: scroll;
+  flex: 1;
+}
+
+.item {
+  margin: 2px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  height: 60px;
+  background-color: #efefef;
+  transition: all .1s ease-in;
+}
+
+.item:hover {
+  cursor: pointer;
+}
