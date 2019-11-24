@@ -1,3 +1,20 @@
+* Koristimo element.style.attribute umjesto element.setAttribute() za sve CSS modifikacije!
+Link: https://stackoverflow.com/questions/3919291/when-to-use-setattribute-vs-attribute-in-javascript/27772088
+
+* Koristimo element.addEventListener() umjesto element.onevent!
+
+* Datotekama dajemo naziv index.html zato što browser pri učitavanju direktorija prvo traži index.html datoteku, ako niti jedna druga specifično nije ponuđena
+Također zbog praktičnosti koristimo main.js za JS eksternu datoteku.
+Kad šaljemo zadaću, imamo samo datoteke index.html i main.js, koje zipamo i nazovemo u formatu: Ime_Prezime_02 (broj zadaće)
+
+* Sve varijable imenujemo na engleskom jeziku.
+
+* Držite do identacija(razmaka)! Na VSCode-u imaju ekstenzije indent-rainbow, Rainbow Brackets... koje će vam pomoći da držite kod urednim.
+
+* Strukturirajte kod u smislene cjeline kako bi bio lako čitak, intuitivan, smislen i pregledan developerima koji će ga nakon što ga vi napišete pregledavati na code review-u!
+
+* Mjestimično ubacite koji komentar kako bi objasnili što želite postići u narednih nekoliko linija.
+
 * Koristimo EcmaScript 2015+ (ES6, ..., ES9)!
 
 Kada se učimo JavaScriptu po prvi put, svi izvori nas navode da prvo učimo starije verzije JS sintakse jer su one podržane na svakom browseru.
@@ -17,16 +34,9 @@ var, function() {}, 'Varijabla X jednaka je ' + x, ...
 ES6+:
 const & let, () => {}, `Varijabla X jednaka je ${x}`, ...
 
-* Koristimo element.style.attribute umjesto element.setAttribute() za sve CSS modifikacije!
-Link: https://stackoverflow.com/questions/3919291/when-to-use-setattribute-vs-attribute-in-javascript/27772088
+Sa prošle zadaće:
 
-* Koristimo element.addEventListener() umjesto element.onevent!
-
-* Držite do identacija(razmaka)! Na VSCode-u imaju ekstenzije indent-rainbow, Rainbow Brackets... koje će vam pomoći da držite kod urednim.
-
-* Strukturirajte kod u smislene cjeline kako bi bio lako čitak, intuitivan, smislen i pregledan developerima koji će ga nakon što ga vi napišete pregledavati na code review-u!
-
-* Mjestimično ubacite koji komentar kako bi objasnili što želite postići u narednih nekoliko linija.
-
-
-
+Vidio sam da se koristi var ili let na mjestu gdje bi idealno bilo ubaciti const.
+Datoteke nazivajmo index.html i main.js
+Dupli if 
+firstChild / firstElementChild
