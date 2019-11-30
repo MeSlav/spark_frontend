@@ -8,19 +8,39 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <div id="app" class="container">
-    <div id="draggable" class="todo dropzone">
+    <div id="todo" class="todo dropzone">
       <div class="item" draggable="true"></div>
       <div class="item" draggable="true"></div>
       <div class="item" draggable="true"></div>
     </div>
-    <div id="dropzone" class="inprogress dropzone">
+    <div id="inprogress" class="inprogress dropzone">
 
     </div>
     <div id="done" class="done dropzone">
 
     </div>
   </div>
+
+  <div id="contextmenu" class="contextmenu">
+
+  </div>
+
+  <dialog class="dialog">
+    <form method="dialog" id="form" class="dialog__form">
+      <div class="dialog__form-item">
+        <input type="text" name="innerText" placeholder="innerText">
+      </div>
+      <div class="dialog__form-item">
+        <input type="submit" value="Add Todo">
+      </div>
+    </form>
+  </dialog>
+
+  <div id="phab" class="phab"></div>
+
+  <script src="cdn/addTodo.js"></script>
   <script src="main.js"></script>
 </body>
 </html>
