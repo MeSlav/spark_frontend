@@ -22,10 +22,12 @@ U predzadnji item prve(lijeve) liste nadodaj link za google.com koji ga otvara u
 Prilikom pritiska na button ('Remove last') ukloni zadnji item sa druge(desne) liste. 10 bodova
 Prilikom pritiska na button ('Remove first') ukloni prvi item sa druge(desne) liste. 10 bodova
 
-3. Bonus pitanje: Objasni sto je shadow DOM i koje su mu prednosti. Strucna definicija ili vlastitim rijecima. 10 bodova
+3. Objasni sto je shadow DOM i koje su mu prednosti. Strucna definicija ili vlastitim rijecima. 10 bodova
+
+Pridrzavalje styleguide-a vam moze omoguciti dodatnih 10 bodova.
 __________________________________________________________________________________________________________________________
 
-Maks broj bodova je 115 unutar ovog testa.
+Maks broj bodova je 125 unutar ovog testa.
 Test je lagan ako mu pristupamo jednu po jednu liniju, u slucaju da nesto ne razumijemo, preskocimo pa se vratimo kasnije.
-Za prolaz na testu potrebno je ostvariti 50% bodova. 57,5 bodova u ovom slucaju.
-Dostupno je 25 bonus bodova, te je sa bonus bodovima moguce ostvariti maksimalan broj od 140 bodova.
+Za prolaz na testu potrebno je ostvariti 50% bodova. 62,5 bodova u ovom slucaju.
+Dostupno je 25 bonus bodova, te je sa bonus bodovima moguce ostvariti maksimalan broj od 150 bodova.
