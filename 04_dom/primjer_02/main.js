@@ -26,8 +26,6 @@ class MyElement extends HTMLElement {
       }
     `;
     shadow.insertBefore(style, shadow.firstElementChild);
-
-
   }
 
   connectedCallback() {
