@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
+
+  <script data-main="scripts/app.js" src="scripts/lib/require.js"></script>
 </head>
 <body>
 
@@ -15,17 +17,11 @@
       <div class="item" draggable="true"></div>
       <div class="item" draggable="true"></div>
     </div>
-    <div id="inprogress" class="inprogress dropzone">
-
-    </div>
-    <div id="done" class="done dropzone">
-
-    </div>
+    <div id="inprogress" class="inprogress dropzone"></div>
+    <div id="done" class="done dropzone"></div>
   </div>
 
-  <div id="contextmenu" class="contextmenu">
-
-  </div>
+  <div id="contextmenu" class="contextmenu"></div>
 
   <dialog class="dialog">
     <form method="dialog" id="form" class="dialog__form">
@@ -39,8 +35,5 @@
   </dialog>
 
   <div id="phab" class="phab"></div>
-
-  <script src="cdn/addTodo.js"></script>
-  <script src="main.js"></script>
 </body>
 </html>
