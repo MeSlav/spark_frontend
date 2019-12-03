@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <style>
+    button {
+      background: cornflowerblue;
+      color: white;
+      padding: 10px;
+      border: none;
+      margin-top: 20px;
+    }
+
+    button,
+    awesome-button {
+      width: 280px;
+      font-size: inherit;
+    }
+  </style>
+  <script defer src="custom-icon.js" type="module"></script>
+  <script defer src="main.js" type="module"></script>
+</head>
+<body>
+  <!-- Element bez slotova i bez atributa -->
+  <custom-icon></custom-icon>
+
+  <!-- Element čije unutrašnje vrijednosti definiramo pomoću atributa -->
+  <custom-icon text="Star" icon="11088"></custom-icon>
+
+  <!-- Element čije unutrašnje vrijednosti definiramo pomoću slotova -->
+  <custom-icon>
+    <span slot="text">Novi tekst</span>
+    <span slot="icon">&#11094;</span>
+  </custom-icon>
+
+  <!--
+    Available emojis: https://www.w3schools.com/charsets/ref_emoji.asp
+
+    8986 231A
+    8987 231B
+    ...
+    129510 1F9E6
+  -->
+</body>
+</html>
