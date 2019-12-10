@@ -1,0 +1,20 @@
+mkdir js-tools-and-workflow
+cd js-tools-and-workflow
+git init
+
+/* Nadodaj datoteku 'git.txt' */
+
+git add git.txt
+git commit -m "JS Tools: Git"
+
+/* Nadodaj datoteke '*.png' */
+
+git add .
+git commit -m "JS Tools: Git + images"
+
+npm init
+
+npm install @babel/cli -g
+npm i @babel/core --save-dev
+
+babel `source file or directory` -d `destination file or directory`
