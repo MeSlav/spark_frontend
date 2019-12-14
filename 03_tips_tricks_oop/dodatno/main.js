@@ -1,5 +1,3 @@
-// stavio data umjesto ovih 6 argumenata
-
 function Vehicle(data) {
   this.name = data.name;
   this.type = data.type;

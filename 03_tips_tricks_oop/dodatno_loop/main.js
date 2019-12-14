@@ -1,10 +1,3 @@
-/* Zadatak 2. Koristeći odgovarajući design pattern,
-  simulirajte blagajnu trgovine,
-  tako da ćete svakom kupcu izračunati koliko treba platiti.
-  Kupce i sadržaj njihovih košarice povežite ID-jem kupca.
-  Pretpostavite da može biti više kupaca
-  koji mogu imati više predmeta u košarici. (20 bodova) */
-
 const Cashier = (function() {
   const customers = [
     {

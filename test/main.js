@@ -192,15 +192,13 @@ remove.addEventListener('click', function (e) {
 }, false);
 
 // Koristeći event delegaciju, registrirati ćemo eventListener samo na ul elementu, koji pomoću propagacije(event bubblinga) prima svaki event svih svojih child elemenata pri povratnoj event bubbling fazi
-const colors = ['red', 'green', 'blue'];
 ul.addEventListener('click', function(e) {
-  console.log(e.target);
   // Provjerom sa e.target.matches(selektor) funkcijom možemo odmah napustiti eventListener u slučaju da se event nije dogodio u elementu koji nas ne zanima, koji je u ovom slučaju li element
   if(!e.target.matches('li')) return false;
 
   // Ovisno o vrijednosti koju smo spremili u activeButton varijablu, činimo razne komputacije
   if (activeButton === 'colorize') {
-    e.target.style.border = '2px solid ' + colors[getRandMinMax(0, 2)];
+    e.target.style.border = `2px solid rgb(${getRandMinMax(0, 255)}, ${getRandMinMax(0, 255)}, ${getRandMinMax(0, 255)})`;
   } else if (activeButton === 'remove') {
     ul.removeChild(e.target);
   } else {
