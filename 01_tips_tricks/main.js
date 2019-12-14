@@ -93,6 +93,57 @@ const loopOver = (param) => {
 fetch('https://jsonplaceholder.typicode.com/posts', { method: 'GET' })
   .then(res => res.json())
   .then(res => {
-    loopOver(res);
+    // loopOver(res);
   })
 
+function groupingParameters(a, b, ...c){
+  console.log(a, b, c);
+};
+
+groupingParameters(5,4);
+groupingParameters('a', 'fa', 2, 6, { a: 'b' }, [1,2]);
+
+const docFrag = document.createDocumentFragment();
+docFrag.appendChild(document.createElement('div'));
+docFrag.appendChild(document.createElement('div'));
+docFrag.appendChild(document.createElement('div'));
+console.dir(docFrag);
+
+const arr1 = [1,2,3,4,5];
+
+console.log(arr1);
+
+const arr2 = [6,7,8];
+const concatArrays = arr1.concat(arr2);
+const mappedArray = arr1.filter(x => {
+  if (x > 3) {
+    return true;
+  }
+})
+console.log(concatArrays, mappedArray);
+
+const arr3 = [...arr1, ...arr2];
+
+console.log(arr3);
+
+arr3.pop();
+
+console.log(arr3);
+
+arr3.shift();
+
+console.log(arr3);
+
+const boolCheck = Boolean(0) ? { prop: 5 } : {};
+
+console.log(boolCheck);
+
+const bool1 = 'AB';
+
+const bool2 = !!(bool1 === 'AB' && !(bool1 !== 'AB') && {} && [] && { prop: 5 });
+
+console.log('bool2', bool2);
+
+const bool3 = bool1 === 'AB' || { prop: 5 };
+
+console.log(bool3);
