@@ -95,4 +95,4 @@ const Cashier = (function() {
   }
 })();
 
-
+console.log(Cashier.pay(2));

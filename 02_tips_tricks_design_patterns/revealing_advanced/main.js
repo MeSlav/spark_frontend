@@ -98,7 +98,7 @@ const Cashier = (function() {
 
   function addCart (newCart){
     // const { customer_id, order } = newCart;
-    if (!newCart.customer_id || !newCart.order) return 'Invalid cart data!';
+    if (!newCart.customer_id || !newCart.orders) return 'Invalid cart data!';
 
     carts.forEach(cart => {
       if (cart.customer_id === newCart.customer_id) {
@@ -142,7 +142,7 @@ const Cashier = (function() {
   }
 })();
 
-const cashier = Cashier;
+const cashier = Object.assign({}, Cashier);
 
 console.log('cashier.pay(1)', cashier.pay(1));
 console.log('cashier.pay(2)', cashier.pay(2));
@@ -151,12 +151,17 @@ console.log('cashier.addItem(Existing ID)', cashier.addItem({
   name: 'milk',
   price: 2,
 }));
-console.log('cashier.addItem(Existing ID)', cashier.addItem({
+console.log('cashier.addItem(new Item)', cashier.addItem({
   id: 4,
   name: 'condom',
   price: 4.5,
 }));
-console.log('cashier.addCustomer(Existing ID)', cashier.addCustomer({
+console.log('cashier.addItem(new Item)', cashier.addItem({
+  id: 7,
+  name: 'condom',
+  price: 4.5,
+}));
+console.log('cashier.addCustomer(Error)', cashier.addCustomer({
   id: 3,
 }));
 console.log('cashier.addCustomer(Existing ID)', cashier.addCustomer({
