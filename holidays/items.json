@@ -1,0 +1,21 @@
+{
+  "authors": [
+    {
+      "name": "Andrzej Sapkowski",
+      "genre": "fantasy",
+      "book": "The Last Wish"
+    },
+    {
+      "name": "Gabriel Marquez",
+      "genre": "magical realism",
+      "book": "One Hundred Years of Solitude"
+    }
+  ],
+  "books": [
+    {
+      "title": "Do Androids Dream of Electric Sheep?",
+      "genre": "fantasy",
+      "author": "Philip K. Dick"
+    }
+  ]
+}
