@@ -1,3 +1,5 @@
+// EVERY CLASS MUST HAVE ITS OWN FILE AND BE LOCATED IN helpers/ FOLDER
+
 /**
  * create Human class that has
  *   properties:
