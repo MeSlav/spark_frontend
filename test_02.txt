@@ -1,0 +1,57 @@
+Each of following classes should be created inside of their own file NameOfTheClass.js, inside of a folder /classes.
+
+Create a class Vehicle with following properties:
+  * type (value passed to constructor)
+  * manufacturer (value passed to constructor)
+  * price (value passed to constructor)
+  * numberOfWheels (value passed to constructor)
+  * crashRegistry (initial value of [])
+  * inOrder (initial value of true)
+Add following getters or setters: 
+  * setter for price (musn't go below zero)
+Add following methods to class prototype:
+  * crash
+    - accepts String argument type
+    - first checks if car is inOrder to either proceed with function or exit it
+    - depending on the value of type being 'medium', the car price goes down by 15% and the car goes out of order
+    - depending on the value of type being 'total', the car price goes down by 50% and the car goes out of order
+    - if it's not either 'medium' or 'total', reduce the car price by 5%, and set type as 'small'
+    - add a new registry to crashRegistry as an object with properties of type and date (new Date().toLocaleISOString())
+
+Create a class Car that extends Vehicle with additional properties:
+  * gasTankSize (passed to constructor with default value of 50)
+  * gasLeft (initial value set as the value of gasTankSize)
+  * engineRunning (initial value of false)
+  * isDriving (initial value of false)
+  * kilometersPassed (initial value of 0)
+  * NOTE: type and numberOfWheels properties passed to Vehicle constructor should always be set to 'car' (as type) and 4 (as numberOfWheels)
+Add following getters or setters:
+  * setter for gasLeft (musn't go below zero or above 100)
+Add following methods to class prototype:
+  * startEngine
+    - first it checks whether engine is already running, and if it is, console log 'Engine already running' and exit function
+    - sets an interval of one second to the engineRunning property (setInterval)
+    - reduces the gasLeft each second by 0.001 after checking is there enough fuel to do so
+    - if fuel tank is below 10% of capacity, log a message 'Fuel low! Please refuel at nearest gas station!' on each interval
+    - if fuel tank is empty, log 'There is no fuel left! Engine turning off!', and stopEngine
+  * stopEngine
+    - stop engineRunning interval (clearInterval) and set engineRunning to false
+  * drive
+    - accepts argument seconds
+    - first check if engine is running, and if it's not, log 'You must start the car first!' and exit function
+    - also check if car is already driving, and if it is, log 'Car is already driving!' and exit function
+    - set isDriving to true
+    - start interval which calls itself each second
+    - reduce gasLeft value for 0.01 each interval run
+    - if there is no gas left clearInterval and exit function
+  * refuel 
+    - simply increase gasLeft by passed amount
+
+Create a class Mechanic with static methods:
+  * repair 
+    - accepts car as argument
+    - goes through property crashRegistry and checks whether last crash was of type 'total', and if it is log 'Vehicle is unfixable!' and exit function
+    - go through all crashes and fix each and add property fixed true to each, and date on which it has been fixed in dateFixed property
+    - log each fix in format: `Vehicle of type ${}, which had a ${} crash on date of ${} has been fixed on ${}.`
+
+_____________________________________________________________
