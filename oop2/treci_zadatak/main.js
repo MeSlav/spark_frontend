@@ -20,28 +20,12 @@ TollBooth.prototype.display = function() {
 
 const tollBooth = new TollBooth();
 
-tollBooth.payingCar();
-tollBooth.payingCar();
-tollBooth.noPayCar();
-tollBooth.display();
-
-/* 
 let random = 1000;
-
-const promise = new Promise((res, rej) => {
-    if(random % 2) {
-        res('noPayCar');
-    } else {
-        res('payingCar');
-    }
-});
-
 setInterval(() => {
     random = Math.floor(Math.random() * 1000) + 1;
-    promise
-    .then(method => {
+    const promise = new Promise(res => res(random % 2 ? 'noPayCar' : 'payingCar'));
+    promise.then(method => {
         tollBooth[method]();
         tollBooth.display();
-    })
+    });
 }, random);
-*/
