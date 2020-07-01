@@ -1,0 +1,70 @@
+* Koristimo element.style.attribute umjesto element.setAttribute() za sve CSS modifikacije!
+Link: https://stackoverflow.com/questions/3919291/when-to-use-setattribute-vs-attribute-in-javascript/27772088
+
+* Koristimo element.addEventListener('click', (e) => { ... }, false) umjesto element.onevent = () => {}!
+On handler, odnosno onevent koristimo unutar samog html-a.
+
+* Datotekama dajemo naziv index.html zato što browser pri učitavanju direktorija prvo traži index.html datoteku, ako niti jedna druga specifično nije ponuđena
+Također zbog praktičnosti koristimo main.js za JS eksternu datoteku.
+Kad šaljemo zadaću, imamo samo datoteke index.html i main.js, koje zipamo i nazovemo u formatu: Ime_Prezime_02 (broj zadaće)
+
+* Sve varijable imenujemo na engleskom jeziku. Nazivi varijabli moraju biti deklarativni. Pogotovo nazivi funkcija.
+
+* Držite do identacija(razmaka)! Na VSCode-u imaju ekstenzije indent-rainbow, Rainbow Brackets... koje će vam pomoći da držite kod urednim.
+
+const arr = [
+  'jedan',
+  'dva',
+  'tri',
+  'cetri'
+];
+
+const obj = {
+  prop1: 1,
+  prop2: 2,
+  prop3: {
+    prop1: 1,
+    prop2: 2,
+  }
+}
+
+function () {
+  expression;
+}
+
+for () {
+  for () {
+    expression;
+  }
+}
+
+* Strukturirajte kod u smislene cjeline kako bi bio lako čitak, intuitivan, smislen i pregledan developerima koji će ga nakon što ga vi napišete pregledavati na code review-u!
+Mjestimično ubacite koji komentar kako bi objasnili što želite postići u narednih nekoliko linija.
+
+* Koristimo EcmaScript 2015+ (ES6, ..., ES9)!
+
+Kada se učimo JavaScriptu po prvi put, svi izvori nas navode da prvo učimo starije verzije JS sintakse jer su one podržane na svakom browseru.
+Kako napredujemo u developmentu, odnosno kako koristimo novije, modernije alate, ti alati nam omogućuju da koristimo najmodernije verzije sintakse u JS-u, bez brige hoće li to browseri podržavati iz razloga što većinom automatiziranim alatima prije dostavljanja produkcijskog koda, sav naš kod transpile-iramo u ES5 varijantu koju su u cijelosti podržali svi browseri.
+
+Napomene:
+Sintaksa u JS-u (ECMAScript) će se konstantno nadograđivati i ubacivati nove feature, ali i zadržati sve stare, zbog backwards compatibility-a.
+
+Link u kojem možemo vidjeti koje smo nove feature dobili od 2015+ u JS-u:
+https://medium.com/@trlogic/es6-es7-es8-features-c0371b0b4c9a
+
+Još jedna napomena, većina browsera još nije podržala sve ove feature-e.
+
+ES5:
+var, function() {}, 'Varijabla X jednaka je ' + x, "" ...
+
+ES6+:
+const & let, () => {}, `
+  Varijabla X jednaka je ${x}
+`, ...
+
+Sa prošle zadaće:
+
+Vidio sam da se koristi var ili let na mjestu gdje bi idealno bilo ubaciti const.
+Datoteke nazivajmo index.html i main.js
+Dupli if
+firstChild / firstElementChild

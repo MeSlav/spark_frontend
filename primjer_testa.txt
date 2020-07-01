@@ -1,0 +1,33 @@
+1. Sto je DOM? Strucna definicija ili vlastitim rijecima. Navedi primjere nekih od DOM svojstava (3) i metoda (3). 10 bodova
+
+2.
+
+Koristeci HTML napravite #wrapper koji unutar sebe sadrzi dvije liste ne numeriranih podataka. (dodatno: od kojih svaka zauzima jednaku širinu unutar tog wrappera(50/50)) 5 bodova + 5 bodova
+
+Ostatak testa koristimo iskljucivo JavaScript:
+Napravi polje za unos brojeva na vrhu #wrappera ciju cemo vrijednost koristiti za funkcionalnost gumba ('Create')(sljedeca linija). 5 bodova
+Prilikom pritiska na gumb('Create') koji se nalazi na dnu #wrappera programski izgeneriraj za svaku listu onoliko itema koliko je navedeno vrijednoscu input polja. 15 bodova
+Svaki item mora biti tekstualno numeriran pocevsi od broja 1 pa nadalje. 5 bodova
+U slucaju da u input polju nije eksplicitno navedeno koliko se itema treba izgenerirati, neka broj izgeneriranih itema bude nasumican(max. 10) 10 bodova
+
+Nakon sto je izgenerirana lista, disable-aj Create button dok se ne napravi neka izmjena unutar liste. (Uklonjen item iz liste). 10 bodova
+Ovisno o numeriranom broju, neka sa lijeve strane svaki neparni broj ima crvenu boju pozadine, a sa desne neka svaki treci pocevsi od prvog ima plavu boju pozadine. 10 bodova
+
+Prilikom pritiska na svaki zasebni item u prvoj(lijevoj) listi, ukloni taj item sa liste. 10 bodova
+Prilikom pritiska na svaki zasebni item u drugoj(desnoj) listi, promijeni boju pozadine tog itema u neku nasumicnu. 10 bodova
+
+U predzadnji item prve(lijeve) liste nadodaj link za google.com koji ga otvara u novom tabu. 5 bodova
+(dodatno: u drugi item druge(desne) liste nadodaj shadow DOM koji ima paragraph elementu u sebi sa bilo kakvom tekstualnom vrijednoscu) + 10 bodova
+
+Prilikom pritiska na button ('Remove last') ukloni zadnji item sa druge(desne) liste. 10 bodova
+Prilikom pritiska na button ('Remove first') ukloni prvi item sa druge(desne) liste. 10 bodova
+
+3. Objasni sto je shadow DOM i koje su mu prednosti. Strucna definicija ili vlastitim rijecima. 10 bodova
+
+Pridrzavalje styleguide-a vam moze omoguciti dodatnih 10 bodova.
+__________________________________________________________________________________________________________________________
+
+Maks broj bodova je 125 unutar ovog testa.
+Test je lagan ako mu pristupamo jednu po jednu liniju, u slucaju da nesto ne razumijemo, preskocimo pa se vratimo kasnije.
+Za prolaz na testu potrebno je ostvariti 50% bodova. 62,5 bodova u ovom slucaju.
+Dostupno je 25 bonus bodova, te je sa bonus bodovima moguce ostvariti maksimalan broj od 150 bodova.

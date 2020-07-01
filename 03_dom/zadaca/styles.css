@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all ease-in .1s;
+}
+
+html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #666;
+}
+
+div {
+  margin: 1rem;
+}
+
+button {
+  background: none;
+  padding: .5rem .8rem;
+  border: 1px solid #bbb;
+}
+
+button:hover {
+  background: #ddd;
+  cursor: pointer;
+}
+
+.dropzone {
+  position: relative;
+  height: 400px;
+  width: 400px;
+  background-color: #fafafa;
+  border: 2px dashed #eee;
+}
+
+.dropzone:after {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #aaa;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+}
+
+.idle:after {
+  content: 'Drag your file here!';
+}
+
+.dragover {
+  background-color: #eee;
+  border: 2px dashed #aaa;
+}
+
+.dragover:after {
+  content: 'Release now!';
+}
+
+.dropped {
+  background-color: #ebffcb;
+  border: 2px dashed #bafd9f;
+}
+
+.dropped:after {
+  content: 'Files dropped! \ Check console!';
+}
+
+

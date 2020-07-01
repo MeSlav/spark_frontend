@@ -1,0 +1,38 @@
+/*
+  Create class "Device" that has following properties: "brand", "batterySize" and "batteryLeft".
+   - ("batterySize" and "batteryLeft" are the total and current capacity in mAh)
+   - batteryLeft equals to batterySize
+   - default value for batterySize: 2000
+  Create getter and setter for property batteryLeft, and getters for brand and batterySize
+   - batteryLeft min value: 0, max value equals to batterySize
+  Create method display that outputs brand, batteryLeft and batterySize
+  Create method "charge" that takes number of seconds and increases "batteryLeft" (Not Promise)
+   - its atomic operation and each second increases "batteryLeft" by 3 mAh
+   - min value 0, max value unlimited. Can't go over "batterySize".
+
+  Create class Cellphone which extends Device
+   - add property "isTalking" (equals to false at initialization)
+   - add method "call" which accepts number of seconds (Promise)
+      - call is atomic operation
+      - each second of conversation decreases battery by 2 mAh
+      - return Promise and resolve it after call ends
+      - can't make two calls at the same time (just output that call is already in progress and return)
+      - make sure that there is enough battery for call
+
+  Create class Tablet which extends Device
+   - add property "isWatching" (equals to false at initialization)
+   - add method "watchVideo" which accepts number of seconds (Promise)
+      - watch video is atomic operation
+      - each seconds of playing decreases battery by 5 mAh
+      - return Promise and resolve it after video ends
+      - can't watch two videos at the same time (just output that watching is already in progress and return)
+      - make sure that there is enough battery to watch whole video
+
+   Instantiate 2 cellphone instances and 1 Tablet instance.
+   Call method "display" on all instances.
+   Call methods "call" and "watchVideo" concurrently by arbitrarily amount of seconds.
+   Call method "display" on all instances again.
+   Then "charge" tablet by random amount of seconds (between 1 - 15).
+   Call method display on all instances again.
+   After they all gets charged, output message: "Finally done!"
+ */

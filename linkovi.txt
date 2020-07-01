@@ -1,0 +1,12 @@
+* Stack Overflow link na kojem je objašnjena razlika između clientHeight, scrollHeight i offsetHeight:
+https://stackoverflow.com/questions/22675126/what-is-offsetheight-clientheight-scrollheight
+
+* Medium link na kojem je objašnjena razlika između innerHTML, innerText i textContent svojstava HTMLElement-a:
+https://medium.com/better-programming/whats-best-innertext-vs-innerhtml-vs-textcontent-903ebc43a3fc
+
+* MDN link na kojem je objašnjena metoda .isEqualNode():
+https://developer.mozilla.org/en-US/docs/Web/API/Node/isEqualNode
+
+* Stack Overflow link na kojem je objašnjena razlika između node-a i element-a:
+https://stackoverflow.com/questions/9979172/difference-between-node-object-and-element-object
+

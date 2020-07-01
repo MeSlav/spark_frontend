@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  border: 1px solid #ddd;
+  height: 300px;
+  display: flex;
+}
+
+.dropzone {
+  border: 1px solid #ddd;
+  margin: 2px;
+  overflow-y: scroll;
+  flex: 1;
+}
+
+.todo .item {
+  background-color: #fff;
+}
+
+.inprogress .item {
+  background-color: #fffed9;
+}
+
+.done .item {
+  background-color: #d2ffc1;
+}
+
+.item {
+  margin: 2px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  height: 60px;
+  background-color: #efefef;
+  transition: all .1s ease-in;
+}
+
+.item:hover {
+  cursor: pointer;
+}
+
+.contextmenu {
+  display: none;
+  width: 100px;
+  height: auto;
+  position: fixed;
+}
+
+.dialog {
+  padding: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.dialog::backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, .3);
+}
+
+.dialog__form {
+  margin: 1rem 1.2rem;
+}
+
+.dialog__form-item {
+  margin-bottom: 1rem;
+}
+
+.dialog__form-item input{
+  border: none;
+  padding: .5rem;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+}
+
+.dialog__form-item [type="submit"]:hover{
+  cursor: pointer;
+}
+
+.phab {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #47b2d3;
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+}
+
+.phab:hover {
+  cursor: pointer;
+}
+
